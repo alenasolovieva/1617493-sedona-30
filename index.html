@@ -8,12 +8,12 @@
 <header>
   <nav>
     <a href="index.html">
-      <img src="img/index-logo.svg" width="138" height="70" alt="Логотип «Седона»">
+      <img src="https://via.placeholder.com/138x70" alt="Логотип «Седона»">
     </a>
     <ul>
-      <li><a href="blank.html">Информация</a></li>
-      <li><a href="blank.html">Фото и видео</a></li>
-      <li><a href="price.html">Карта штата</a></li>
+      <li><a href="#">Информация</a></li>
+      <li><a href="#">Фото и видео</a></li>
+      <li><a href="#">Карта штата</a></li>
       <li><a href="catalog.html">Гостиницы</a></li>
     </ul>
   </nav>
@@ -90,10 +90,13 @@
   </p>
   <p>
     <label for="appointment-name">Взрослые:</label>
-    <input id="appointment-name" type="text" name="name" placeholder="2"
+    <label>от<input type="text" value="1"></label>
+    <label>до<input type="text" value="5"></label>
   </p> 
-  <p>label for="appointment-name">Дети:</label>
-    <input id="appointment-name" type="text" name="name" placeholder="0"
+  <p>
+    <label for="appointment-name">Дети:</label>
+    <label>от<input type="text" value="0"></label>
+    <label>до<input type="text" value="5"></label>
   </p>
   
   <button type="submit">Найти</button>
