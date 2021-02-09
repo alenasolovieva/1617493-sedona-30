@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
@@ -9,14 +8,13 @@
   <link rel="apple-touch-icon" href="img/icons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
-
-<body>
-  <header>
-    <nav>
-      <a>
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
         <img src="img/icons/logosedona.svg" alt="Логотип «Седона»" width="138" height="70">
       </a>
-      <ul>
+      <ul class="site-navigation">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
@@ -25,17 +23,17 @@
       <a href="index.html"></a>
     </nav>
   </header>
-  <main>
+  <main class="container">
     <h1>Седона</h1>
     <section>
       <h2>Седона-небольшой городок в аризоне,<br>
         заслуживающий большего!</h2>
       <p>Рассмотрим 5 причин,по которым седона круче,чем гранд каньон!</p>
     </section>
-    <section>
+    <section class="features">
       <h2>Преимущества</h2>
-      <ol>
-        <li>
+      <ol class="features-list">
+        <li class="feature-item">
           <h3>Настоящий городок</h3>
           <p>№1</p>
           <p>Седона-не аттракцион для туристов,там течет своя жизнь</p>
@@ -43,21 +41,21 @@
       </ol>
       <img src="img/sedona.jpg" alt="Настоящий городок-Седона" width="800" height="256">
       <ul>
-        <li>
+        <li class="feature-item">
           <h3>Жилье</h3>
           <p>Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
         </li>
-        <li>
+        <li class="feature-item">
           <h3>Еда</h3>
           <p>Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
         </li>
-        <li>
+        <li class="feature-item">
           <h3>Сувениры</h3>
           <p>Не только китайского,но и местного производства!</p>
         </li>
       </ul>
       <ol start="2">
-        <li>
+        <li class="feature-item">
           <h3>Там есть мост дьявола</h3>
           <p>№2</p>
           <p>Да, по нему можно пройти!если конечно вы осмелитесь</p>
@@ -65,83 +63,75 @@
       </ol>
         <img src="img/sedonamount.jpg" alt="Мост дьявола в Седоне" width="800" height="256">
         <ol start="3">
-        <li>
+        <li class="feature-item">
           <h3>Небольшая площадь</h3>
           <p>№3</p>
           <p>Все достопримечательности находятся очень близко</p>
         </li>
-        <li>
+        <li class="feature-item">
           <h3>Красивая дорога</h3>
           <p>№4</p>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
-        <li>
+        <li class="feature-item">
           <h3>Мало туристов</h3>
           <p>№5</p>
           <p>Большинство едет в гранд каньон и толпится там</p>
         </li>
       </ol>
     </section>
-    <section>
-      <h2>Заинтересовались?</h2>
-      <p>Укажите предполагаемые даты поездки,<br>
-        и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    </section>
-    <section>
+    <section class="hotel-search">
       <h2>Поиск гостиницы в Седоне</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
+      <p class="hotel-search-info">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="hotel-search-item">
           <label for="appointment-date">Дата заезда:</label>
           <input id="appointment-date" type="text" name="date" placeholder="24.04.2017">
         </p>
-        <p>
+        <p class="hotel-search-item">
           <label for="disappointment-date">Дата выезда:</label>
           <input id="disappointment-date" type="text" name="date" placeholder="04.07.2017">
         </p>
-        <p>
+        <p class="hotel-search-item">
           <label for="appointment-name">Взрослые:</label>
           <input id="appointment-name" type="text" name="name">
         </p>
-        <p>
+        <p class="hotel-search-item">
           <label for="appointment-namechild">Дети:</label>
           <input id="appointment-namechild" type="text" name="name">
         </p>
-
-        <button type="submit">Найти</button>
+        <button class="button" type="submit">Найти</button>
+        <p><img src="img/map.png" alt="Карта Седоны" width="1199" height="594"></p>
       </form>
     </section>
   </main>
-  <footer>
-    <section>
+  <footer class="main-footer">
+    <section class="footer-contacts">
       <h2>Как с нами связаться</h2>
       <p>#visitsedona<br>
-        Тел:<a href="tel:+74956660166">+7 (495) 666-01-66</a>
+        Тел:<a class="contacts-phone" href="tel:+74956660166">+7 (495) 666-01-66</a>
       </p>
     </section>
-    <section>
+    <section class="footer-social">
       <h2>Наши соц.сети</h2>
       <ul>
         <li>
-          <a href="#">Твиттер</a>
+          <a class="social-button" href="#">Твиттер</a>
         </li>
         <li>
-          <a href="#">Фейсбук</a>
+          <a class="social-button" href="#">Фейсбук</a>
         </li>
         <li>
-          <a href="#">Ютуб</a>
+          <a class="social-button" href="#">Ютуб</a>
         </li>
       </ul>
     </section>
-    <section>
-      <h2>Как до нас добраться</h2>
-      <img src="img/map.png" alt="Карта Седоны" width="1199" height="594">
-      <button type="button">Закрыть</button>
-    </section>
-    <p>
-      Разработано:
-      <a href="https://htmlacademy.ru">website by html academy</a>
+    <p class="footer-copyright">
+      Website by:
+      <a href="https://htmlacademy.ru">
+      <img src="img/icons/logohtmlacademy.svg" alt="Логотип «html academy»" width="115" height="41">
+      </a>
     </p>
   </footer>
 </body>
-
 </html>
