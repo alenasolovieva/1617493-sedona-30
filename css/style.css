@@ -83,3 +83,13 @@ img {
 .feature-item {
 text-align: center;
 }
+.feature-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+.search {
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--white);
+  background-color: var(--accent-2);
+}
