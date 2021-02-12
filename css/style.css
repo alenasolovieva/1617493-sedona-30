@@ -66,3 +66,20 @@ img {
 .main-navigation-wrapper {
   background-color: var(--white);
 }
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: var(--black);
+}
+
+/* Features */
+
+.features-list {
+  list-style: none;
+}
+.feature-item {
+text-align: center;
+}
