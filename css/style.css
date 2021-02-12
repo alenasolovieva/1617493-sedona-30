@@ -44,5 +44,12 @@ font-family: "PT Sans", sans-serif;
 font-size: 14px;
 line-height: 21px;
 font-weight: normal;
-co
+color: var(--black);
+text-transform: none;
+background-color: var(--white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
