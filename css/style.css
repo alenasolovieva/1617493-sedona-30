@@ -93,3 +93,52 @@ text-align: center;
   color: var(--white);
   background-color: var(--accent-2);
 }
+
+/* Button */
+
+.button {
+font: inherit;
+text-align: center;
+color: var(--white);
+vertical-align: middle;
+text-transform: uppercase;
+background-color: var(--accent-1);
+border: none;
+}
+.button:hover {
+  background-color: var(--accent-1);
+}
+.button:focus {
+  background-color: var(--accent-1-dark);
+}
+.button:active {
+  background-color: var(--accent-1-darken);
+}
+
+/* Contacts */
+
+.contacts-phone {
+  color: inherit;
+}
+
+/* Hotel search */
+
+.hotel-search-item input {
+  font: inherit;
+  background-color: var(--grey-lighten);
+  border: none;
+}
+.hotel-search-item input:hover {
+  background-color: var(--grey-light);
+}
+.hotel-search-item input:focus {
+  background-color: var(--white);
+}
+
+/* Main footer */
+
+.main-footer {
+color: var(--black);
+background-color: var(--white);
+
+}
