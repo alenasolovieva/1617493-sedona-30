@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class= "page" lang="ru">
-
 <head>
     <meta charset="utf-8">
     <title>Каталог-Седона</title>
@@ -12,13 +11,12 @@
     <link rel="apple-touch-icon" href="img/icons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
 </head>
-
 <body class="page-body">
-
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo" href="index.html">
-                <img src="img/icons/logosedona.svg" alt="Логотип «Седона»" width="138" height="70">
+              <p class="header-logo">
+                <img src="img/icons/logosedona.svg" alt="Логотип «Седона»" width="138" height="70"></p>
             </a>
             <div class="main-navigation-wrapper">
               <div class="container">
@@ -26,7 +24,7 @@
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Фото и видео</a></li>
                 <li><a href="#">Карта штата</a></li>
-                <li><a href="catalog.html">Гостиницы</a></li>
+                <li class="active-navigation"><a href="catalog.html">Гостиницы</a></li>
             </ul>
               </div>
             </div>
@@ -81,23 +79,13 @@
         <section class="sorting">
             <h1>Сортировка:</h1>
             <ul class="sorting-list">
-                <li class="sorting-item">
-                    <input type="checkbox" name="price" id="price" checked>
-                    <label for="price">Цена</label>
-                </li>
-                <li class="sorting-item">
-                    <input type="checkbox" name="type" id="type">
-                    <label for="type">Тип</label>
-                </li>
-                <li class="sorting-item">
-                    <input type="checkbox" name="rating" id="rating">
-                    <label for="rating">Рейтинг</label>
-                </li>
+                <li class="active-sorting"><a href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По рейтингу</a></li>
             </ul>
-            <p class="found">Найдено:3</p>
+            <p class="found">Найдено: 3</p>
         </section>
         <section class="house">
-            <h2>Жилье</h2>
             <ul class="house-list">
                 <li class="house-item">
                     <a href="#">
@@ -106,18 +94,18 @@
                             <img src="img/amara.jpg" alt="Amara resort & spa" width="135" height="90">
                         </p>
                     </a>
-                    <p>
+                    <p class="house-item-description">
                         Гостиница
                     </p>
-                    <p>
+                    <p class="house-item-description">
                         От 4000 Р.
                     </p>
-                    <p>
-                        Рейтинг:8,5
+                    <p class="house-item-description">
+                      <b class="rating">Рейтинг: 8,5</b>
                     </p>
                     <p>
-                        <button class="button" type="button">Подробнее</button>
-                        <button class="button" type="button">Забронировать</button>
+                        <button class="button-details" type="button">Подробнее</button>
+                        <button class="button-booking" type="button">Забронировать</button>
                     </p>
                 <li class="house-item">
                     <a href="#">
@@ -126,18 +114,18 @@
                             <img src="img/desert.jpg" alt="Desert quail inn" width="135" height="90">
                         </p>
                     </a>
-                    <p>
+                    <p class="house-item-description">
                         Мотель
                     </p>
-                    <p>
+                    <p class="house-item-description">
                         От 3000 Р.
                     </p>
-                    <p>
-                        Рейтинг:8,9
+                    <p class="house-item-description">
+                        <b class="rating">Рейтинг: 8,9</b>
                     </p>
                     <p>
-                        <button class="button" type="button">Подробнее</button>
-                        <button class="button" type="button">Забронировать</button>
+                        <button class="button-details" type="button">Подробнее</button>
+                        <button class="button-booking" type="button">Забронировать</button>
                     </p>
                 <li class="house-item">
                     <a href="#">
@@ -146,18 +134,18 @@
                             <img src="img/villas.jpg" alt="Villas at poco diablo" width="135" height="90">
                         </p>
                     </a>
-                    <p>
+                    <p class="house-item-description">
                         Апартаменты
                     </p>
-                    <p>
+                    <p class="house-item-description">
                         От 2000 Р.
                     </p>
-                    <p>
-                        Рейтинг:9,2
+                    <p class="house-item-description">
+                      <b class="rating">Рейтинг: 9,2</b>
                     </p>
                     <p>
-                        <button class="button" type="button">Подробнее</button>
-                        <button class="button" type="button">Забронировать</button>
+                        <button class="button-details" type="button">Подробнее</button>
+                        <button class="button-booking" type="button">Забронировать</button>
                     </p>
                 </li>
             </ul>
@@ -186,7 +174,7 @@
       </section>
       <p class="footer-copyright">
         Website by:
-        <a href="https://htmlacademy.ru">
+        <a class="button" href="https://htmlacademy.ru">
         <img src="img/icons/logohtmlacademy.svg" alt="Логотип «html academy»" width="115" height="41">
         </a>
       </p>

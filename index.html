@@ -15,7 +15,8 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
-        <img src="img/icons/logosedona.svg" alt="Логотип «Седона»" width="138" height="70">
+        <p class="header-logo">
+        <img src="img/icons/logosedona.svg" alt="Логотип «Седона»" width="138" height="70"> </p>
       </a>
       <div class="main-navigation-wrapper">
         <div class="container">
@@ -23,7 +24,7 @@
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
+        <li class="site-navigation-current"><a href="catalog.html">Гостиницы</a></li>
       </ul>
         </div>
       </div>
@@ -31,68 +32,70 @@
     </nav>
   </header>
   <main class="container">
-    <h1>Седона</h1>
     <section>
-      <h2>Седона-небольшой городок в аризоне,<br>
-        заслуживающий большего!</h2>
-      <p>Рассмотрим 5 причин,по которым седона круче,чем гранд каньон!</p>
+      <h2>Седона-небольшой городок в аризоне,заслуживающий большего!</h2>
+      <p class="container-description">Рассмотрим 5 причин,по которым седона круче,чем гранд каньон!</p>
     </section>
     <section class="features">
       <h2>Преимущества</h2>
       <ol class="features-list">
         <li class="feature-item">
+          <div class="real-town">
           <h3>Настоящий городок</h3>
-          <p>№1</p>
-          <p>Седона-не аттракцион для туристов,там течет своя жизнь</p>
+          <p class="description">№1</p>
+          <p class="description">Седона-не аттракцион для туристов,там течет своя жизнь</p>
+          </div>
         </li>
       </ol>
       <img src="img/sedona.jpg" alt="Настоящий городок-Седона" width="800" height="256">
       <ul class="features-list">
         <li class="feature-item">
           <h3>Жилье</h3>
-          <p>Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
+          <p class="description">Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
         </li>
         <li class="feature-item">
           <h3>Еда</h3>
-          <p>Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
+          <p class="description">Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
         </li>
         <li class="feature-item">
           <h3>Сувениры</h3>
-          <p>Не только китайского,но и местного производства!</p>
+          <p class="description">Не только китайского,но и местного производства!</p>
         </li>
       </ul>
       <ol class= "features-list" start="2">
         <li class="feature-item">
+          <div class="real-town">
           <h3>Там есть мост дьявола</h3>
-          <p>№2</p>
-          <p>Да, по нему можно пройти!если конечно вы осмелитесь</p>
+          <p class="description">№2</p>
+          <p class="description">Да, по нему можно пройти!если конечно вы осмелитесь</p>
+          </div>
         </li>
       </ol>
+    </section>
         <img src="img/sedonamount.jpg" alt="Мост дьявола в Седоне" width="800" height="256">
+        <section class="accent-feature">
         <ol class="features-list" start="3">
         <li class="feature-item">
           <h3>Небольшая площадь</h3>
-          <p>№3</p>
-          <p>Все достопримечательности находятся очень близко</p>
+          <p class="description">№3</p>
+          <p class="description">Все достопримечательности находятся очень близко</p>
         </li>
         <li class="feature-item">
           <h3>Красивая дорога</h3>
-          <p>№4</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <p class="description">№4</p>
+          <p class="description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li class="feature-item">
           <h3>Мало туристов</h3>
-          <p>№5</p>
-          <p>Большинство едет в гранд каньон и толпится там</p>
+          <p class="description">№5</p>
+          <p class="description">Большинство едет в гранд каньон и толпится там</p>
         </li>
       </ol>
     </section>
     <section class="hotel-search">
-      <div class="search">
-      <h2>Поиск гостиницы в Седоне</h2>
-      </div>
-      <p class="hotel-search-info">Заинтересовались?<br>
-        Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <h2>Заинтересовались?</h2>
+      <p class="hotel-search-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <a class="hotel-search-info" href="#">Поиск гостинницы в седоне</a>
       <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="hotel-search-item">
           <label for="appointment-date">Дата заезда:</label>
@@ -138,7 +141,7 @@
     </section>
     <p class="footer-copyright">
       Website by:
-      <a href="https://htmlacademy.ru">
+      <a class="button" href="https://htmlacademy.ru">
       <img src="img/icons/logohtmlacademy.svg" alt="Логотип «html academy»" width="115" height="41">
       </a>
     </p>
