@@ -84,6 +84,9 @@ img {
 .filter-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .sorting {
@@ -93,14 +96,6 @@ img {
   padding: 0;
   margin: 0;
 }
-
-.filter {
-  display: grid;
-  grid-column: 1 / -1;
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
-}
-
 
 .house {
   grid-column: 1 / -1;
@@ -183,7 +178,7 @@ background-color: var(--white);
 .features-list {
   display: grid;
   margin: 0;
-  padding: 0;
+  padding-top: 51px;
   grid-template-columns: repeat(8, 1fr);
   column-gap: 20px;
   list-style: none;
