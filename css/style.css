@@ -75,12 +75,6 @@ img {
 
 /* Grid for pages */
 
-.page-catalog {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-content: start;
-}
-
 .filter-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
