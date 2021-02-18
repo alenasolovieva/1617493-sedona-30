@@ -176,6 +176,7 @@ background-color: var(--white);
   grid-template-columns: repeat(8, 1fr);
   column-gap: 20px;
   list-style: none;
+  justify-self: center;
 }
 
 .feature-item p {
