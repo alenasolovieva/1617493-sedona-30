@@ -172,7 +172,7 @@ background-color: var(--white);
 .features-list {
   display: grid;
   margin: 0;
-  padding-top: 51px;
+  padding: 0;
   grid-template-columns: repeat(8, 1fr);
   column-gap: 20px;
   list-style: none;
