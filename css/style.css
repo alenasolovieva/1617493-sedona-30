@@ -72,7 +72,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: inherit;
 }
 
 .sorting {
@@ -94,12 +94,9 @@ img {
 /* Main navigation */
 
 .main-navigation {
-  display: grid;
   font-size: inherit;
   line-height: inherit;
   font-weight: bold;
-  color: var(--black);
-  background-color: var(--white);
 }
 
 .site-navigation,
@@ -126,7 +123,6 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 .container h2 {
@@ -154,7 +150,6 @@ img {
   padding: 0;
   list-style: none;
   justify-self: center;
-  width: 1200px;
 }
 
 .real-town {
@@ -284,14 +279,10 @@ width: 458px;
 /* Main footer */
 
 .main-footer {
-padding: 36px 0;
-color: var(--black);
-background-color: var(--white);
-}
-
-.main-footer .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 36px 0;
+  margin: 0 138px;
 }
 
 .footer-contacts {
@@ -335,8 +326,8 @@ background-color: var(--white);
 }
 
 .footer-copyright .button {
-  color: var(--black);
-  background-color: var(--white);
+  color: inherit;
+  background-color: inherit;
 }
 
 
@@ -384,7 +375,7 @@ background-color: var(--white);
   list-style: none;
 }
 .house-list a {
-  color: var(--black);
+  color: inherit;
 }
 .house-item a {
   font-size: 21px;
