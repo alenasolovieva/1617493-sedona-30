@@ -123,6 +123,7 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
+  justify-self: center;
 }
 
 .container h2 {
@@ -281,13 +282,10 @@ width: 458px;
 .main-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 36px 0;
-  margin: 0 138px;
 }
 
 .footer-contacts {
-  margin: 0;
-  width: 251px;
+  justify-self: center;
   font-weight: bold;
 }
 
@@ -297,13 +295,13 @@ width: 458px;
 }
 
 .footer-social {
-  width: 151px;
   justify-self: center;
   text-align: center;
 }
 
 .footer-social ul {
   list-style: none;
+  justify-self: center;
 }
 
 
@@ -320,9 +318,7 @@ width: 458px;
 }
 
 .footer-copyright {
-  max-width: 197px;
-  margin: 0;
-  justify-self: end;
+  justify-self: center;
 }
 
 .footer-copyright .button {
@@ -476,3 +472,13 @@ color: var(--accent-1);
   color: var(--accent-1);
 }
 
+/* Flex
+
+.house-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 23px;
+}
+ */
