@@ -73,6 +73,7 @@ img {
   margin: 0;
   padding: 0;
   width: inherit;
+  justify-self: center;
 }
 
 .sorting {
@@ -437,7 +438,9 @@ color: var(--accent-1);
   color: var(--white);
   background-color: transparent;
   border: oldlace;
+  justify-self: center;
 }
+
 .button-filter:hover {
   color: var(--black);
   background-color: var(--white);
@@ -481,4 +484,56 @@ color: var(--accent-1);
   margin: 0;
   margin-bottom: 23px;
 }
- */
+
+.house-item {
+  width: 1200px;
+  min-height: 150px;
+  margin-bottom: 55px;
+}
+
+.house-item h3 {
+  margin-top: 23px;
+  margin-right: 723px;
+  margin-bottom: 7px;
+  margin-left: 237px;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.catalog-item-image {
+  width: 135px;
+  height: 90px;
+  margin: 0;
+}
+
+.house-item-description {
+  display: flex;
+}
+
+*/
+
+
+.filter fieldset {
+border: none;
+padding: 0;
+margin: 0;
+margin-bottom: 29px;
+}
+
+.filter fieldset:first-child {
+  margin-left: 72px;
+  margin-right: 119px;
+}
+.filter legend {
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.filter ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  line-height: 21px;
+}
+
