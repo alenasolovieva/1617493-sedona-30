@@ -122,7 +122,7 @@ img {
 }
 
 
-/* Features */
+/* Features
 
 
 .features-list {
@@ -155,9 +155,9 @@ box-sizing: border-box;
   color: var(--black);
   background-color: var(--white);
 }
+*/
 
 
-/*
 .features-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -184,7 +184,14 @@ color: var(--black);
 background-color: var(--white);
 }
 
-*/
+.features-first {
+  display: grid;
+  grid-template-columns: repeat(3,400px);
+  list-style: none;
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 0;
+}
 
 .feature-item h3 {
   font-size: 21px;
@@ -210,6 +217,16 @@ background-color: var(--white);
   background-color: var(--accent-1);
   text-align: center;
 }
+
+.real-town {
+  display: grid;
+  grid-template-columns: 400px 800px;
+}
+
+.image-feature img {
+  display: block;
+}
+
 
 /* Hotel search */
 
@@ -386,19 +403,18 @@ width: 458px;
 .house-list {
   list-style: none;
 }
-.house-list a {
-  color: inherit;
-}
-.house-item a {
+
+.house-heading  {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   text-decoration: none;
+  color: var(--black);
 }
-.house-item a:hover {
+.house-heading :hover {
 color: var(--accent-1);
 }
-.house-item a:active {
+.house-heading :active {
   color: var(--grey-light);
 }
 .house-item-description {
@@ -424,6 +440,7 @@ color: var(--accent-1);
   color: var(--white);
   background-color: var(--accent-1);
   border: none;
+  text-decoration: none;
 }
 .button-details:hover {
   background-color: var(--accent-1-dark);
@@ -440,6 +457,7 @@ color: var(--accent-1);
   color: var(--white);
   background-color: var(--accent-2);
   border: none;
+  text-decoration: none;
 }
 .button-booking:hover {
   background-color: var(--accent-2-dark);
