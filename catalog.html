@@ -31,7 +31,7 @@
   </header>
   <main class="page-catalog container">
     <section class="filter">
-      <h1>Фильтр</h1>
+      <h1 class="visibility-hidden">Фильтр</h1>
       <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="filter">
           <legend>Инфраструктура:</legend>
@@ -71,10 +71,13 @@
           <legend>Стоимость в сутки (Р):</legend>
           <label>От<input type="text" value="0"></label>
           <label>До<input type="text" value="3000"></label>
+          <div>
           <button class="button-filter" type="submit">Показать</button>
+          </div>
         </fieldset>
       </form>
     </section>
+    <div class="sorting-flex">
     <p class="found">Найдено: 3</p>
     <section class="sorting">
       <h1>Сортировка:</h1>
@@ -83,7 +86,12 @@
         <li><a href="#">По типу</a></li>
         <li><a href="#">По рейтингу</a></li>
       </ul>
+      <p>
+        <a class="arrow" href="#">По возрастанию</a>
+        <a class="arrow-active" href="#">По убыванию</a>
+      </p>
     </section>
+    </div>
     <section class="house container">
       <ul class="house-list">
         <li class="house-item">
@@ -152,13 +160,13 @@
   </main>
   <footer class="main-footer container">
     <section class="footer-contacts">
-      <h2>Как с нами связаться</h2>
+      <h2 class="visibility-hidden">Как с нами связаться</h2>
       <p>#visitsedona<br>
         Тел:<a class="contacts-phone" href="tel:+74956660166">+7 (495) 666-01-66</a>
       </p>
     </section>
     <section class="footer-social">
-      <h2>Наши соц.сети</h2>
+      <h2 class="visibility-hidden">Наши соц.сети</h2>
       <ul>
         <li>
           <a class="social-button" href="#">Твиттер</a>
@@ -173,7 +181,7 @@
     </section>
     <p class="footer-copyright">
       Website by:
-      <a class="button" href="https://htmlacademy.ru">
+      <a class="button-copyright" href="https://htmlacademy.ru">
         <img src="img/icons/logohtmlacademy.svg" alt="Логотип «html аcademy»" width="115" height="41">
       </a>
     </p>
