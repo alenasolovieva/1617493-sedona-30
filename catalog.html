@@ -17,15 +17,13 @@
   <header class="main-header container">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
-        <p class="header-logo">
           <img src="img/icons/logosedona.svg" alt="Логотип «Седона»" width="138" height="70">
-        </p>
       </a>
       <ul class="site-navigation">
-        <li class="site-navigation-current"><a href="#">Информация</a></li>
-        <li class="site-navigation-current"><a href="#">Фото и видео</a></li>
-        <li class="site-navigation-current"><a href="#">Карта штата</a></li>
-        <li class="active-navigation"><a href="catalog.html">Гостиницы</a></li>
+        <li class="site-navigation-element"><a href="#">Информация</a></li>
+        <li class="site-navigation-element"><a href="#">Фото и видео</a></li>
+        <li class="site-navigation-element"><a href="#">Карта штата</a></li>
+        <li class="site-navigation-element active-navigation"><a href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -86,11 +84,11 @@
         <li><a href="#">По типу</a></li>
         <li><a href="#">По рейтингу</a></li>
       </ul>
-      <p>
+    </section>
+      <p class="item-arrow">
         <a class="arrow" href="#">По возрастанию</a>
         <a class="arrow-active" href="#">По убыванию</a>
       </p>
-    </section>
     </div>
     <section class="house container">
       <ul class="house-list">
@@ -101,19 +99,24 @@
               <img src="img/amara.jpg" alt="Amara resort & spa" width="135" height="90">
             </p>
           </a>
+          <div class="catalog-description">
           <p class="house-item-description">
             Гостиница
           </p>
           <p class="house-item-description">
             От 4000 Р.
           </p>
-          <p class="house-item-description">
-            <b class="rating">Рейтинг: 8,5</b>
-          </p>
-          <p>
+          <p class="button-catalog">
             <a class="button-details" href="#">Подробнее</a>
             <a class="button-booking" href="#">Забронировать</a>
           </p>
+          </div>
+          <div class="stars-rating">
+          <p class="stars">Звезды отеля</p>
+          <p class="house-item-description">
+            <b class="rating">Рейтинг: 8,5</b>
+          </p>
+          </div>
         <li class="house-item">
           <a class="house-heading" href="#">
             <h3>Desert quail inn</h3>
@@ -121,19 +124,24 @@
               <img src="img/desert.jpg" alt="Desert quail inn" width="135" height="90">
             </p>
           </a>
+          <div class="catalog-description">
           <p class="house-item-description">
             Мотель
           </p>
           <p class="house-item-description">
             От 3000 Р.
           </p>
-          <p class="house-item-description">
-            <b class="rating">Рейтинг: 8,9</b>
-          </p>
-          <p>
+          <p class="button-catalog">
             <a class="button-details" href="#">Подробнее</a>
             <a class="button-booking" href="#">Забронировать</a>
           </p>
+          </div>
+          <div class="stars-rating">
+          <p class="stars">Звезды отеля</p>
+          <p class="house-item-description">
+            <b class="rating">Рейтинг: 8,9</b>
+          </p>
+          </div>
         <li class="house-item">
           <a class="house-heading" href="#">
             <h3>Villas at poco diablo</h3>
@@ -141,19 +149,24 @@
               <img src="img/villas.jpg" alt="Villas at poco diablo" width="135" height="90">
             </p>
           </a>
+          <div class="catalog-description">
           <p class="house-item-description">
             Апартаменты
           </p>
           <p class="house-item-description">
             От 2000 Р.
           </p>
-          <p class="house-item-description">
-            <b class="rating">Рейтинг: 9,2</b>
-          </p>
-          <p>
+          <p class="button-catalog">
             <a class="button-details" href="#">Подробнее</a>
             <a class="button-booking" href="#">Забронировать</a>
           </p>
+          </div>
+          <div class="stars-rating">
+          <p class="stars">Звезды отеля</p>
+          <p class="house-item-description">
+            <b class="rating">Рейтинг: 8,9</b>
+          </p>
+          </div>
         </li>
       </ul>
     </section>
@@ -167,7 +180,7 @@
     </section>
     <section class="footer-social">
       <h2 class="visibility-hidden">Наши соц.сети</h2>
-      <ul>
+      <ul class="social-list">
         <li>
           <a class="social-button" href="#">Твиттер</a>
         </li>
