@@ -77,6 +77,7 @@ img {
   font-weight: bold;
   min-height: 56px;
   position: relative;
+  background-color: inherit;
 }
 
 .site-navigation,
@@ -126,55 +127,25 @@ img {
   width: 1200px;
   margin: 0 auto;
   justify-self: center;
+  padding: 0.1px 0;
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  background-color: var(--white);
+  display: grid;
+
 }
 
-.container h2 {
+.small-town h2 {
   font-size: 21px;
   line-height: 26px;
   text-align: center;
+  background-color: inherit;
 }
-.container-description {
+.sedona-description {
   font-size: inherit;
   line-height: inherit;
   text-align: center;
 }
 
-
-/* Features
-
-
-.features-list {
-list-style: none;
-display: flex;
-flex-wrap: wrap;
-margin: 0;
-padding: 0;
-}
-
-.feature-item-accent {
-width: 400px;
-padding: 10px;
-box-sizing: border-box;
-}
-
-.feature-item:nth-child(1), .feature-item:nth-child(2) {
- width: 100%;
-}
-.features-first {
-  list-style: none;
-  display: flex;
-  background-color: inherit;
-  color: inherit;
-}
-.features-first .feature-item {
-  width: 400px;
-  padding: 10px;
-  box-sizing: border-box;
-  color: var(--black);
-  background-color: var(--white);
-}
-*/
 
 .features {
 margin-top: 51px;
@@ -273,6 +244,8 @@ margin-bottom: 58px;
 
 /* Hotel search */
 
+
+
 .hotel-search h2 {
   font-size: 30px;
   line-height: 24px;
@@ -287,6 +260,7 @@ margin-bottom: 58px;
   text-align: center;
   font-weight: normal;
   margin-bottom: 24px;
+
 }
 
 .hotel-search-info {
@@ -299,7 +273,7 @@ margin-bottom: 58px;
   background-color: var(--accent-2);
   border: none;
   width: 568px;
-  margin: 0 316px;
+  padding: 30px 124px;
 }
 
 .hotel-search-info:hover {
@@ -335,7 +309,7 @@ text-transform: uppercase;
 background-color: var(--accent-1);
 border: none;
 width: 458px;
-
+padding: 16px 181px;
 }
 .button {
   background-color: var(--accent-1);
@@ -359,12 +333,15 @@ width: 458px;
 .main-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  background-color: inherit;
+
 }
 
 .footer-contacts {
   justify-self: center;
   font-weight: bold;
   text-align: center;
+
 }
 
 .footer-contacts a {
@@ -376,6 +353,7 @@ width: 458px;
 .footer-social {
   justify-self: center;
   text-align: center;
+
 }
 
 .footer-social ul {
@@ -546,6 +524,8 @@ color: var(--accent-1);
 
 /* Sorting */
 
+
+
 .sorting h1 {
   font-size: 12px;
   line-height: 18px;
@@ -607,7 +587,7 @@ color: var(--accent-1);
 }
 
 
-.main-header .container {
+.main-header {
   display: flex;
 }
 
@@ -623,6 +603,7 @@ color: var(--accent-1);
   margin-top: 55px;
   align-items: center;
   text-align: center;
+  background-color: inherit;
 }
 
 .people {
@@ -694,6 +675,7 @@ margin-left: auto
   flex-wrap: wrap;
   align-items: center;
   padding-left: 73px;
+  background-color: inherit;
 
 }
 
@@ -714,6 +696,7 @@ margin-left: auto
   display: flex;
   margin-left: 46px;
   align-items: center;
+
 }
 
 .sorting-list a {
@@ -777,11 +760,11 @@ margin-left: auto
 }
 
 .catalog-description {
-  outline: 5px solid #669ec0;
+
 }
 
 .stars-rating {
-  outline: 5px solid #ff0000;
+
 }
 
 
@@ -819,6 +802,7 @@ margin-left: auto
 .stars {
   color: var(--accent-1);
 }
+
 
 
 .visibility-hidden {
