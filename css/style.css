@@ -47,6 +47,7 @@ color: var(--black);
 text-transform: uppercase;
 background-color: var(--white);
 min-height: 100%;
+background-color: var(--grey-lighten);
 }
 
 img {
@@ -78,6 +79,7 @@ img {
   min-height: 56px;
   position: relative;
   background-color: inherit;
+  padding: 0 63px;
 }
 
 .site-navigation,
@@ -140,6 +142,7 @@ img {
   text-align: center;
   background-color: inherit;
 }
+
 .sedona-description {
   font-size: inherit;
   line-height: inherit;
@@ -255,7 +258,7 @@ margin-bottom: 58px;
 }
 
 .hotel-search-description {
-  font-size: 30px;
+  font-size: 14px;
   line-height: 24px;
   text-align: center;
   font-weight: normal;
@@ -274,6 +277,7 @@ margin-bottom: 58px;
   border: none;
   width: 568px;
   padding: 30px 124px;
+
 }
 
 .hotel-search-info:hover {
@@ -357,21 +361,40 @@ padding: 16px 181px;
 }
 
 .footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 150px;
+  margin: 0 auto;
+  padding: 0;
   list-style: none;
-  justify-self: center;
+
 }
 
 
 /* Social-button */
 
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--accent-1);
+  width: 46px;
+  height: 48px;
+  background-color: var(--accent-1);
+  color: var(--white);
+
 }
 
-.social-button:hover,
-.social-button:focus {
+
+
+.social-button:hover {
   color: var(--white);
   background-color: var(--accent-1-dark);
+}
+.social-button:active {
+  color: var(--white);
+  background-color: var(--accent-1-darken);
 }
 
 .footer-copyright {
@@ -604,6 +627,9 @@ color: var(--accent-1);
   align-items: center;
   text-align: center;
   background-color: inherit;
+  justify-self: center;
+  justify-content: center;
+  vertical-align: middle;
 }
 
 .people {
@@ -638,10 +664,6 @@ margin-left: auto
 
 }
 
-.hotel-search-description {
-  margin: 0;
-  margin-bottom: 24px;
-}
 
 .button {
   margin: 55px;
