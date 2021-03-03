@@ -610,12 +610,6 @@ color: var(--accent-1);
 }
 
 
-.main-header {
-  display: flex;
-}
-
-
-
 .hotel-search-form {
   display: flex;
   flex-direction: column;
@@ -624,12 +618,13 @@ color: var(--accent-1);
   width: 568px;
   margin-left: 315px;
   margin-top: 55px;
+  background-color: inherit;
   align-items: center;
   text-align: center;
-  background-color: inherit;
   justify-self: center;
   justify-content: center;
   vertical-align: middle;
+  align-self: center;
 }
 
 .people {
