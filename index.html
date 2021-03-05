@@ -28,6 +28,11 @@
     </nav>
   </header>
   <main>
+    <section class="background-image">
+      <img src="img/background-photo.jpg" alt="Добро пожаловать в Седону" width="1200" height="509">
+      <img src="img/welcomeindex.svg" class="background-text" alt="Добро пожаловать в Седону" width="456" height="350">
+      <img src="img/substrateindex.svg" class="background-substrate" alt="Добро пожаловать в Седону" width="1200" height="57">
+    </section>
     <section class="small-town">
       <h2>Седона-небольшой городок в аризоне,<br>заслуживающий большего!</h2>
       <p class="sedona-description">Рассмотрим 5 причин,по которым седона круче,чем гранд каньон!</p>
@@ -70,21 +75,21 @@
           </p>
         </li>
         <li class="feature-item feature-item-accent">
-          <div>
+          <div class="description-accent">
           <h3>Небольшая площадь</h3>
           <p class="description">№3</p>
           <p class="description">Все достопримечательности находятся очень близко</p>
         </div>
         </li>
         <li class="feature-item feature-item-accent">
-          <div>
+          <div class="description-accent">
           <h3>Красивая дорога</h3>
           <p class="description">№4</p>
           <p class="description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
         </li>
         <li class="feature-item feature-item-accent">
-          <div>
+          <div class="description-accent">
           <h3>Мало туристов</h3>
           <p class="description">№5</p>
           <p class="description">Большинство едет в гранд каньон и толпится там</p>
@@ -109,19 +114,20 @@
         <div class="people">
         <p class="hotel-search-item">
           <label for="appointment-name">Взрослые:</label>
-          <input id="appointment-name" type="text" name="name">
+          <input id="appointment-name" type="text" name="name" placeholder="2">
         </p>
         <p class="hotel-search-item children">
           <label for="appointment-namechild">Дети:</label>
-          <input id="appointment-namechild" type="text" name="name">
+          <input id="appointment-namechild" type="text" name="name" placeholder="0">
         </p>
         </div>
           <button class="button" type="submit">Найти</button>
       </form>
-      <p class="map-sedona"><img src="img/map.png" alt="Карта Седоны" width="1199" height="594"></p>
     </section>
+    <p class="map-sedona"><img src="img/map.png" alt="Карта Седоны" width="1199" height="594"></p>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer main-footer-index">
+    <div class="footer-elements footer-index">
     <section class="footer-contacts">
       <h2 class="visibility-hidden">Как с нами связаться</h2>
       <p>#visitsedona<br>
@@ -148,6 +154,7 @@
         <img src="img/icons/logohtmlacademy.svg" alt="Логотип «html academy»" width="115" height="41">
       </a>
     </p>
+  </div>
   </footer>
 </div>
 </body>
