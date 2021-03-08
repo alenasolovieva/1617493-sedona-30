@@ -105,23 +105,31 @@
         <p class="hotel-search-description">Укажите предполагаемые даты поездки, <br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a class="hotel-search-info" href="#">Поиск гостиницы в седоне</a>
+
+
         <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="hotel-search-item date">
             <label for="appointment-date">Дата заезда:</label>
-            <input id="appointment-date" type="text" name="date" placeholder="24.04.2017">
+            <input id="appointment-date" type="text" name="date" placeholder="24 апреля 2017">
           </p>
           <p class="hotel-search-item date">
             <label for="disappointment-date">Дата выезда:</label>
-            <input id="disappointment-date" type="text" name="date" placeholder="04.07.2017">
+            <input id="disappointment-date" type="text" name="date" placeholder="04 июля 2017">
           </p>
+
+
           <div class="people">
             <p class="hotel-search-item adults">
               <label for="appointment-name">Взрослые:</label>
-              <input id="appointment-name" type="text" name="name" placeholder="2">
+              <button class="form-small-button">-</button>
+              <input id="appointment-name" type="text" name="quantity" placeholder="2">
+              <button class="form-small-button">+</button>
             </p>
             <p class="hotel-search-item children">
               <label for="appointment-namechild">Дети:</label>
-              <input id="appointment-namechild" type="text" name="name" placeholder="0">
+              <button class="form-small-button">-</button>
+              <input id="appointment-namechild" type="text" name="quantity" placeholder="0">
+              <button class="form-small-button">+</button>
             </p>
           </div>
           <button class="button" type="submit">Найти</button>

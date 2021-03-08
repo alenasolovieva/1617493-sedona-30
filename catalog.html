@@ -14,7 +14,7 @@
 </head>
 
 <body class="page-body">
-  <div class="container">
+  <div class="container inner-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
@@ -68,33 +68,29 @@
               </li>
             </ul>
           </fieldset>
-
-
-          <fieldset class="filter cost">
+          <fieldset class="filter-cost">
             <legend>Стоимость в сутки (Р):</legend>
             <div class="range-filter">
               <div class="price-controls">
                 <label class="min-price">
-                  от <input type="number" name="min-price" value="0">
+                  от <input type="text" name="min-price" value="0">
                 </label>
                 <label class="max-price">
-                  до <input type="number" name="max-price" value="3000">
+                  до <input type="text" name="max-price" value="3000">
                 </label>
               </div>
               <div class="range-controls">
                 <div class="scale">
-                  <div class="bar"></div>
+                  <div class="bar" style="width: 80%; margin-left: 0%"></div>
                 </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
+                <div class="toggle toggle-min" tabindex="0" style="left: 0%"></div>
+                <div class="toggle toggle-max" tabindex="0" style="left: 80%"></div>
               </div>
             </div>
             <div>
               <button class="button-filter" type="submit">Показать</button>
             </div>
           </fieldset>
-
-
         </form>
       </section>
       <div class="sorting-flex">
@@ -122,13 +118,10 @@
           </a>
         </p>
       </div>
-      <div class="line-catalog">
         <section class="house">
           <ul class="house-list">
             <li class="house-item">
-              <a class="house-heading" href="#">
-                <h3>Amara resort & spa</h3>
-              </a>
+                <h3><a class="house-heading" href="#">Amara resort & spa</a></h3>
               <p class="catalog-item-image">
                 <img src="img/amara.jpg" alt="Amara resort & spa" width="135" height="90">
               </p>
@@ -150,12 +143,9 @@
                 <span>Звезды отеля</span>
               </p>
               <p class="rating">Рейтинг: 8,5</p>
-              </p>
-      </div>
-      <div class="line-catalog">
+            </li>
         <li class="house-item">
-          <a class="house-heading" href="#">
-            <h3>Desert quail inn</h3>
+            <h3><a class="house-heading" href="#">Desert quail inn</a></h3>
           </a>
           <p class="catalog-item-image">
             <img src="img/desert.jpg" alt="Desert quail inn" width="135" height="90">
@@ -178,12 +168,9 @@
             <span>Звезды отеля</span>
           </p>
           <p class="rating">Рейтинг: 8,9</p>
-          </p>
-      </div>
-      <div class="line-catalog">
+        </li>
         <li class="house-item">
-          <a class="house-heading" href="#">
-            <h3>Villas at poco diablo</h3>
+            <h3><a class="house-heading" href="#">Villas at poco diablo</a></h3>
           </a>
           <p class="catalog-item-image">
             <img src="img/villas.jpg" alt="Villas at poco diablo" width="135" height="90">
@@ -206,10 +193,7 @@
             <span>Звезды отеля</span>
           </p>
           <p class="rating">Рейтинг: 8,9</p>
-          </p>
-      </div>
-  </div>
-  </li>
+        </li>
   </ul>
   </section>
   </main>
