@@ -234,6 +234,7 @@ img {
 .feature-item h3 {
   font-size: 21px;
   line-height: 21px;
+	text-align: center;
 }
 
 .description {
@@ -362,12 +363,11 @@ img {
   border: none;
   text-transform: uppercase;
   color: var(--black);
-
 }
-.hotel-search-item input:hover {
+.hotel-search-item.date input:hover {
   background-color: var(--grey-light);
 }
-.hotel-search-item input:focus {
+.hotel-search-item.date input:focus {
   background-color: var(--white);
 }
 
@@ -723,8 +723,8 @@ width: 458px;
   background: var(--white);
 }
 .range-controls .toggle {
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 20px;
   padding: 0;
   background-color: var(--togle);
   border: 8px solid var(--white);
@@ -787,7 +787,13 @@ width: 458px;
   background-color: var(--grey-lighten);
   border: none;
   cursor: pointer;
-  padding: 10px;
+  width: 38px;
+	height: 38px;
+	margin: 0px;
+	background-color: var(--grey-lighten);
+	color:var(--form-small-button);
+	font-weight: bold;
+	font-size: 23px;
 }
 
 .calendar {
@@ -797,14 +803,16 @@ width: 458px;
   background-color: #F2F2F2;
 }
 .calendar:hover path,
-.form-small-button:hover path,
-.form-small-button:hover rect {
+.form-small-button:hover,
+.form-small-button:hover {
   fill: var(--black);
+  color: var(--black);
 }
 .calendar:active path,
-.form-small-button:active path,
-.form-small-button:active rect {
+.form-small-button:active,
+.form-small-button:active {
   fill: var(--accent-1);
+  color: var(--accent-1);
 }
 
 
@@ -826,7 +834,7 @@ width: 458px;
   justify-self: center;
 }
 .hotel-search-item input {
-  width: 346px;
+  width: 325px;
   padding: 6px 10px;
   color: var(--black);
 }
@@ -837,6 +845,11 @@ width: 458px;
   width: 100px;
   margin-right: 10px;
 }
+.people .hotel-search-item label {
+  width: 100px;
+
+}
+
 .children {
   text-align: right;
 }
@@ -1077,7 +1090,9 @@ width: 458px;
   margin-top: 25px;
 
 }
-
+::placeholder {
+  color: var(--black);
+}
 .visibility-hidden,
 .visually-hidden {
   position: absolute;
