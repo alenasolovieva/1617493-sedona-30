@@ -1021,27 +1021,31 @@ width: 458px;
 
 .house-item {
   display: grid;
-  grid-template-columns: 222px 1fr max-content;
+  grid-template-columns: 135px 1fr max-content;
   border-bottom: 1px solid #e5e5e5;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-left: 73px;
 }
 .catalog-description {
   display: grid;
   grid-template-columns: max-content max-content;
   margin-left: 20px;
+
 }
 .house-item-description.name {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   margin: 0;
   padding: 0;
-  align-self: flex-start;
+
 }
 .house-item-description.price {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   margin: 0;
   padding: 0;
-  align-self: flex-start;
+
 }
 .button-details {
   grid-column: 1 / 2;
@@ -1058,8 +1062,8 @@ width: 458px;
   width: 135px;
   height: 90px;
   order: -1;
-  margin-left: 73px;
-  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
   grid-column: 1 / 2;
   grid-row: 1 / 4;
 }
