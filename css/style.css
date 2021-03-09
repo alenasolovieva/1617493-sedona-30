@@ -598,7 +598,7 @@ width: 458px;
   background-color: transparent;
   border: 2px solid white;
   text-align: center;
-  margin-left: 70px;
+  margin-left: 80px;
 }
 
 .button-filter:hover {
@@ -683,7 +683,7 @@ width: 458px;
 }
 
 .range-controls .scale {
-  width: 300px;
+  width: 318px;
   height: 2px;
   background: rgba(255, 255, 255, 0.3);
 }
@@ -717,24 +717,35 @@ width: 458px;
   left: 180px;
 }
 .price-controls input {
-  width: 50px;
-  text-align: center;
+  width: 35px;
   border: none;
   font-family: inherit;
   font-size: inherit;
   background-color: transparent;
   color: var(--white);
-  align-items: center;
-  text-align: center;
 }
+
 .price-controls {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2px;
+  width: 318px;
   text-align: center;
-  width: 300px;
   border: 2px solid var(--white);
   border-radius: 2px;
-  background-image: url(../img/icons/line-filter-catalog.svg);
-  background-position: center;
-  background-repeat: no-repeat;
+}
+.range-price {
+  display: inline-block;
+}
+.range-price:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  margin-left: 48px;
+  margin-top: 3px;
+  margin-bottom: 2px;
+  background-color: var(--white);
 }
 
 .hotel-search-form {
@@ -793,8 +804,7 @@ width: 458px;
 .hotel-search-item input {
   width: 346px;
   padding: 6px 10px;
-  background-position: right;
-  background-repeat: no-repeat;
+  color: var(--black);
 }
 
 
