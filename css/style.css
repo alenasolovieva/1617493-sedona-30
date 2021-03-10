@@ -625,6 +625,7 @@ width: 458px;
   border: 2px solid white;
   text-align: center;
   margin-left: 80px;
+  outline: transparent;
 }
 
 .button-filter:hover {
@@ -900,15 +901,13 @@ width: 458px;
   position: absolute;
   left: -35px;
   top: 0;
-  width: 23px;
+  width: 27px;
   height: 23px;
   background-image: url(../img/icons/check-border-off.svg);
   background-repeat: no-repeat;
 }
 .filter-input-checkbox:checked+label::before {
   background-image: url(../img/icons/check-mark-on.svg);
-  width: 27px;
-  height: 23px;
 }
 
 .sorting-flex {
