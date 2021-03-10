@@ -733,7 +733,7 @@ width: 458px;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(255, 255, 255, 0.3);
   position: absolute;
-  bottom: 27px;
+  bottom: 25px;
   cursor: pointer;
 }
 .range-controls .toggle-min {
@@ -907,6 +907,8 @@ width: 458px;
 }
 .filter-input-checkbox:checked+label::before {
   background-image: url(../img/icons/check-mark-on.svg);
+  width: 27px;
+  height: 23px;
 }
 
 .sorting-flex {
@@ -1089,9 +1091,7 @@ width: 458px;
   grid-row: 1 / 2;
   color: var(--accent-1);
   background-image: url(../img/icons/star-house.svg);
-  width: 19px;
   height: 17px;
-  background-repeat: repeat;
   background-repeat: space;
   margin: 0;
   justify-self: end;
