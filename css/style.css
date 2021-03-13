@@ -132,6 +132,8 @@ img {
   height: 509px;
   position: relative;
   z-index: 100;
+  object-fit: contain;
+  background-color: var(--white);
 }
 
 .background-text {
@@ -160,12 +162,14 @@ img {
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
   background-color: var(--white);
   display: grid;
+  position: relative;
 }
 .inner-page {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   min-height: 100vh;
   width: 1200px;
+
 }
 
 .small-town h2 {
@@ -174,18 +178,20 @@ img {
   text-align: center;
   background-color: inherit;
   margin-top: 42px;
+  margin-bottom: 45px;
 }
 
 .sedona-description {
   font-size: inherit;
   line-height: inherit;
   text-align: center;
+  margin: 0;
 }
 
 
 .features {
   margin-top: 51px;
-  margin-bottom: 58px;
+  margin-bottom: 53px;
 }
 
 
@@ -196,6 +202,7 @@ img {
   padding: 0;
   list-style: none;
   justify-self: center;
+
 }
 
 .feature-item p {
@@ -228,14 +235,19 @@ img {
 .feature-item-first {
   color: var(--black);
   background-color: var(--white);
-
+  padding: 60px 56px 0px 50px;
+}
+.feature-item-first h3 {
+  padding-top: 28px;
+  padding-bottom: 25px;
 
 }
-
 .feature-item h3 {
   font-size: 21px;
   line-height: 21px;
 	text-align: center;
+  margin: 0;
+
 }
 
 .description {
@@ -255,12 +267,6 @@ img {
 
 }
 
-.description-accent {
-  padding-left: 70px;
-  padding-right: 75px;
-  padding-top: 47px;
-  padding-bottom: 54px;
-}
 
 .real-town {
   display: grid;
@@ -272,19 +278,25 @@ img {
   color: var(--white);
   background-color: var(--accent-1);
   text-align: center;
-
 }
 
-.second {
+.real-town-accent {
   display: grid;
   grid-template-columns: 800px 400px;
 }
+.real-features {
+  padding: 0px 50px 10px 50px;
+}
 
-
+.description-accent {
+  padding: 50px 60px 70px 60px;
+}
 .image-feature img {
   display: block;
+  object-fit: contain;
+  background-color: var(--white);
 }
-.two {
+.image-two-feature {
   order: -1;
 }
 .background-house {
@@ -293,8 +305,7 @@ img {
 	height: 72px;
 	background-repeat: no-repeat;
 	background-position: center;
-  margin-left: 162px;
-  margin-top: 60px;
+  margin-left: 110px;
 }
 .background-eat {
   background-image: url(../img/icons/background-eat.svg);
@@ -302,19 +313,19 @@ img {
 	height: 70px;
 	background-repeat: no-repeat;
 	background-position: center;
-  margin-left: 162px;
-  margin-top: 60px;
+  margin-left: 110px;
 }
 .background-souvenirs {
   background-image: url(../img/icons/background-souvenirs.svg);
-  width: 64px;
-	height: 77px;
+  width: 70px;
+	height: 75px;
 	background-repeat: no-repeat;
 	background-position: center;
-  margin-left: 170px;
-  margin-top: 55px;
+  margin-left: 115px;
 }
-
+.description.number {
+  padding: 25px 0px;
+}
 /* Hotel search */
 
 .hotel-search h2 {
@@ -322,6 +333,7 @@ img {
   line-height: 24px;
   text-align: center;
   font-weight: bold;
+  margin: 0;
 
 }
 
@@ -330,8 +342,9 @@ img {
   line-height: 24px;
   text-align: center;
   font-weight: normal;
-  margin-bottom: 24px;
-
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 42px;
 }
 
 .hotel-search-info {
@@ -402,37 +415,43 @@ width: 458px;
 
 .contacts-phone {
   color: inherit;
+  padding-bottom: 10px;
 }
-
 
 /* Main footer */
 
- .footer-index {
+.main-footer-index {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 1200px;
+  width: 100%;
   min-height: 120px;
   position: absolute;
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.9);
   align-items: center;
 }
-
+.hashtag {
+  padding-bottom: 10px;
+}
 .main-footer-catalog {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  min-height: 120px;
   align-items: center;
 }
-
-.main-footer-index {
-  position: relative
+.main-footer {
+  padding-left: 50px;
+  padding-right: 50px;
 }
-
 .footer-contacts {
   justify-self: center;
   font-weight: bold;
   text-align: center;
+}
+.footer-contacts p {
+  font-size: 21px;
+  line-height: 26px;
+  margin: 0;
+
 }
 
 .map-sedona {
@@ -441,6 +460,8 @@ width: 458px;
   height: 594px;
   margin: 0;
   padding: 0;
+  object-fit: contain;
+  background-color: var(--white);
 }
 
 .footer-contacts a {
@@ -501,10 +522,12 @@ width: 458px;
   justify-self: center;
   text-align: center;
 }
+
 .button-copyright svg {
   vertical-align: middle;
   width: 115px;
   height: 41px;
+  margin-right: 18px;
 }
 .button-copyright:hover path {
   fill: var(--accent-1);
@@ -532,7 +555,8 @@ width: 458px;
 
 .wholly {
   width: 1200px;
-  height: 217px;
+  min-height: 217px;
+  background-size: cover;
 }
 
 .filter legend {
@@ -552,6 +576,7 @@ width: 458px;
 .filter-list {
   margin: 0;
   padding: 0;
+
 }
 
 .filter-input-checkbox:disabled {
@@ -763,6 +788,7 @@ width: 458px;
 }
 .range-price {
   display: inline-block;
+  padding: 3px 0px;
 }
 .range-price:nth-child(1)::after {
   content: "";
@@ -838,7 +864,7 @@ width: 458px;
 .hotel-search-item {
   display: flex;
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   font-weight: bold;
   justify-self: center;
 }
@@ -854,6 +880,7 @@ width: 458px;
   width: 100px;
   margin-right: 10px;
   flex-shrink: 0;
+  padding-top: 5px;
 }
 
 .children {
@@ -866,7 +893,7 @@ width: 458px;
 
 
 .button {
-  margin-top: 10px;
+  margin-top: 25px;
   display: block;
   text-align: center;
 
@@ -887,6 +914,7 @@ width: 458px;
   margin: 0;
   padding: 0;
   width: inherit;
+
 }
 
 .filter-item label {
@@ -1021,6 +1049,7 @@ width: 458px;
   column-gap: 30px;
   padding-right: 73px;
   row-gap: 7px;
+  align-items: flex-start;
 }
 .catalog-description {
   display: grid;
@@ -1060,6 +1089,8 @@ width: 458px;
   margin-bottom: 0;
   grid-column: 1 / 2;
   grid-row: 1 / 4;
+  object-fit: contain;
+  background-color: var(--white);
 }
 
 .rating {
