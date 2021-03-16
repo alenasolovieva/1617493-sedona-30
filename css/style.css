@@ -140,7 +140,7 @@ img {
   position: absolute;
   z-index: 99;
   left: 50%;
-  top: 62px;
+  top: 75px;
   transform: translateX(-50%);
 }
 
@@ -356,6 +356,7 @@ img {
   display: block;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   color: var(--white);
   background-color: var(--accent-2);
   border: none;
@@ -515,13 +516,16 @@ width: 458px;
 .footer-copyright {
   justify-self: center;
   text-align: center;
+  padding-left: 5px;
+  padding-top: 5px;
 }
 
 .button-copyright svg {
   vertical-align: middle;
   width: 115px;
   height: 41px;
-  margin-right: 18px;
+  margin-right: 11px;
+  margin-bottom: 7px;
 }
 .button-copyright:hover path {
   fill: var(--accent-1);
@@ -645,7 +649,7 @@ width: 458px;
   background-color: transparent;
   border: 2px solid white;
   text-align: center;
-  margin-left: 80px;
+  margin-left: 86px;
   outline: transparent;
 }
 
@@ -653,13 +657,16 @@ width: 458px;
   color: var(--black);
   background-color: var(--white);
 }
-
+.button-filter:focus {
+  outline: 1px solid var(--white);
+}
 /* Sorting */
 
 .sorting h1 {
   font-size: 12px;
   line-height: 18px;
   font-weight: normal;
+  padding-bottom: 5px;
 }
 
 .sorting-list a {
@@ -685,7 +692,7 @@ width: 458px;
   opacity: 1;
 }
 
-.sorting.active a {
+.sorting-item.active a {
   color: var(--accent-1);
   border-bottom: none;
   opacity: 1;
@@ -703,7 +710,7 @@ width: 458px;
 
 .filter-item {
   margin-bottom: 25px;
-  margin-left: 35px
+  margin-left: 41px
 }
 
 .filter ul {
@@ -771,12 +778,13 @@ width: 458px;
 
 .price-controls {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2,159px);
   gap: 2px;
   width: 318px;
   text-align: center;
   border: 2px solid var(--white);
   border-radius: 2px;
+  position: relative;
 }
 .range-price {
   display: inline-block;
@@ -787,10 +795,10 @@ width: 458px;
   content: "";
   position: absolute;
   width: 2px;
-  height: 20px;
-  margin-left: 48px;
-  margin-top: 3px;
-  margin-bottom: 2px;
+  height: 22px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50% -50%);
   background-color: var(--white);
 }
 
@@ -842,7 +850,7 @@ width: 458px;
   outline: 2px solid var(--outline-input);
 }
 .form-small-button:focus {
-  outline: transparent;
+  outline: 2px solid var(--outline-input);
 }
 
 .people {
@@ -893,9 +901,7 @@ width: 458px;
 
 .button-copyright {
   justify-self: center;
-  margin-left: 8px;
-  margin-top: 38px;
-  margin-bottom: 41px;
+  margin-left: 4px;
   text-align: center;
   align-items: center;
 }
@@ -918,7 +924,7 @@ width: 458px;
 .filter-input-checkbox+label::before {
   content: "";
   position: absolute;
-  left: -35px;
+  left: -40px;
   top: 0;
   width: 27px;
   height: 23px;
@@ -928,7 +934,9 @@ width: 458px;
 .filter-input-checkbox:checked+label::before {
   background-image: url(../img/icons/check-mark-on.svg);
 }
-
+.filter-input-checkbox:focus+label::before {
+  outline: 2px solid var(--accent-1);
+}
 .sorting-flex {
   display: flex;
   flex-wrap: wrap;
@@ -942,14 +950,17 @@ width: 458px;
 
 .sorting-list {
   display: flex;
+  align-items: center;
 }
-
+.sorting-item {
+  margin-left: 40px;
+}
 .item-arrow {
   display: flex;
   margin-left: auto;
-  margin-right: 70px;
+  margin-right: 64px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .item-arrow a {
@@ -958,13 +969,14 @@ width: 458px;
 
 .sorting {
   display: flex;
-  margin-left: 44px;
+  margin-left: 47px;
   align-items: center;
-
+  text-align: center;
+  padding-bottom: 2px;
 }
 
 .sorting-list a {
-  margin-right: 30px;
+  margin-right: 33px;
   color: var(--black);
   opacity: 0.3;
 }
@@ -1075,7 +1087,7 @@ width: 458px;
   width: 135px;
   height: 90px;
   order: -1;
-  margin-top: 7px;
+  margin-top: 6px;
   margin-bottom: 0;
   grid-column: 1 / 2;
   grid-row: 1 / 4;
@@ -1090,7 +1102,7 @@ width: 458px;
   grid-row: 2 / 3;
   grid-column: 3 / 4;
   align-self: flex-end;
-  padding: 1px 15px;
+  padding: 1px 13px;
   margin-top: 0;
   margin-bottom: 0;
   margin-right: auto;
@@ -1101,7 +1113,7 @@ width: 458px;
 .button-booking {
   padding-top: 3px;
   padding-bottom: 3px;
-  padding-left: 17px;
+  padding-left: 15px;
   padding-right: 16px;
   align-self: flex-start;
 }
@@ -1115,6 +1127,7 @@ width: 458px;
   background-repeat: space;
   margin: 0;
   justify-self: end;
+  margin-top: 5px;
 }
 .four-stars {
   width: 88px;
