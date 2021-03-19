@@ -28,19 +28,17 @@
       </nav>
     </header>
     <main>
-      <section class="background-image">
-        <img src="img/background-photo.jpg" alt="Добро пожаловать в Седону" width="1200" height="509">
-        <img src="img/welcomeindex.svg" class="background-text" alt="Добро пожаловать в Седону" width="456"
+      <section class="intro">
+        <h1 class="visually-hidden">Cедона-город в Аризоне</h1>
+        <img src="img/welcomeindex.svg" class="intro-img" alt="Добро пожаловать в Седону" width="456"
           height="350">
-        <img src="img/substrateindex.svg" class="background-substrate" alt="Добро пожаловать в Седону" width="1200"
-          height="57">
       </section>
       <section class="small-town">
         <h2>Седона — небольшой городок в аризоне,<br>заслуживающий большего!</h2>
         <p class="sedona-description">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
       </section>
       <section class="features">
-        <h2 class="visibility-hidden">Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <ol class="features-list">
           <li class="feature-item real-town">
             <div class="real-features">
@@ -103,11 +101,11 @@
         <h2>Заинтересовались?</h2>
         <p class="hotel-search-description">Укажите предполагаемые даты поездки, <br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="hotel-search-info" type="submit">Поиск гостиницы в седоне</button>
+        <button class="hotel-search-info" type="button">Поиск гостиницы в седоне</button>
         <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="hotel-search-item date">
             <label for="appointment-date">Дата заезда:</label>
-            <input id="appointment-date" type="text" name="date" placeholder="24 апреля 2017">
+            <input id="appointment-date" type="text" name="date-entry" placeholder="24 апреля 2017">
             <button class="calendar" type="button">
               <span class="visually-hidden">Календарь</span>
               <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,7 +120,7 @@
           </p>
           <p class="hotel-search-item date">
             <label for="disappointment-date">Дата выезда:</label>
-            <input id="disappointment-date" type="text" name="date" placeholder="4 июля 2017">
+            <input id="disappointment-date" type="text" name="date-departure" placeholder="4 июля 2017">
             <button class="calendar" type="button">
               <span class="visually-hidden">Календарь</span>
               <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -139,13 +137,13 @@
             <p class="hotel-search-item adults">
               <label for="appointment-name">Взрослые:</label>
               <button class="form-small-button" type="button"> − </button>
-              <input id="appointment-name" type="text" name="quantity" value="2">
+              <input id="appointment-name" type="text" name="adults" value="2">
               <button class="form-small-button" type="button"> + </button>
             </p>
             <p class="hotel-search-item children">
               <label for="appointment-namechild">Дети:</label>
               <button class="form-small-button" type="button"> − </button>
-              <input id="appointment-namechild" type="text" name="quantity" value="0">
+              <input id="appointment-namechild" type="text" name="children" value="0">
               <button class="form-small-button" type="button"> + </button>
             </p>
           </div>
@@ -156,13 +154,13 @@
     </main>
     <footer class="main-footer main-footer-index">
       <section class="footer-contacts">
-        <h2 class="visibility-hidden">Как с нами связаться</h2>
+        <h2 class="visually-hidden">Как с нами связаться</h2>
         <p class="hashtag">#visitsedona</p>
         <p class="contacts-phone"> Тел:<a href="tel:+74956660166"> +7 (495) 666-01-66</a>
         </p>
       </section>
       <section class="footer-social">
-        <h2 class="visibility-hidden">Наши соц.сети</h2>
+        <h2 class="visually-hidden">Наши соц.сети</h2>
         <ul class="social-list">
           <li>
             <a class="social-button twitter" href="#">

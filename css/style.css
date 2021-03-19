@@ -1,19 +1,19 @@
 /* Fonts */
 
 @font-face {
-    font-family: "PT Sans";
-    src: url("../fonts/PTSans.woff2") format("woff2"),
-    url("../fonts/PTSans.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans.woff2") format("woff2"),
+  url("../fonts/PTSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "PT Sans";
-    src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
-    url("../fonts/PTSans-Bold.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
+  url("../fonts/PTSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
 
 /* Variables */
@@ -43,15 +43,14 @@
 /* Global */
 
 .page-body {
-font-family: "PT Sans", Arial, sans-serif;
-font-size: 14px;
-line-height: 26px;
-font-weight: normal;
-color: var(--black);
-text-transform: uppercase;
-background-color: var(--white);
-min-height: 100%;
-background-color: var(--grey-lighten);
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  color: var(--black);
+  text-transform: uppercase;
+  min-height: 100%;
+  background-color: var(--grey-lighten);
 }
 
 img {
@@ -126,30 +125,16 @@ img {
 .site-navigation-element a:active {
   color: var(--black-lighten);
 }
-
-.background-image {
+.intro {
   width: 1200px;
   height: 509px;
-  position: relative;
-  z-index: 100;
   object-fit: contain;
-  background-color: var(--white);
-}
+  background-image: url(../img/background-photo.jpg);
 
-.background-text {
-  position: absolute;
-  z-index: 99;
-  left: 50%;
-  top: 75px;
-  transform: translateX(-50%);
 }
+.intro-img {
 
-.background-substrate {
-  position: absolute;
-  z-index: 100;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0px;
+
 }
 
 /* Container */
@@ -161,7 +146,6 @@ img {
   padding: 0.1px 0;
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
   background-color: var(--white);
-  display: grid;
   position: relative;
 }
 .inner-page {
@@ -211,7 +195,6 @@ img {
 .feature-item {
   font-size: 21px;
   line-height: 21px;
-  color: inherit;
   text-align: center;
   color: var(--black);
   background-color: var(--white);
@@ -395,15 +378,15 @@ img {
 /* Button */
 
 .button {
-font-size: 21px;
-line-height: 26px;
-text-align: center;
-color: var(--white);
-text-transform: uppercase;
-background-color: var(--accent-1);
-border: none;
-padding: 16px 181px;
-width: 458px;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--white);
+  text-transform: uppercase;
+  background-color: var(--accent-1);
+  border: none;
+  padding: 16px 181px;
+  width: 458px;
 }
 .button:hover {
   background-color: var(--accent-1-dark);
@@ -874,8 +857,6 @@ width: 458px;
   padding: 6px 10px;
   color: var(--black);
 }
-
-
 .hotel-search-item label {
   display: inline-block;
   width: 100px;
@@ -883,15 +864,12 @@ width: 458px;
   flex-shrink: 0;
   padding-top: 5px;
 }
-
 .children {
   text-align: right;
 }
-
 .children label {
   padding-right: 16px;
 }
-
 
 .button {
   margin-top: 25px;
@@ -1141,7 +1119,6 @@ width: 458px;
 ::placeholder {
   color: var(--black);
 }
-.visibility-hidden,
 .visually-hidden {
   position: absolute;
   width: 1px;
